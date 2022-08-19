@@ -3,11 +3,12 @@ import { BsWrench } from "react-icons/bs";
 import Search from "./components/Search";
 import AddAppointment from "./components/AddAppointment";
 import ConfigInfo from "./components/ConfigInfo";
+import MessageInfo from "./components/MessageInfo";
 // import AppointmentInfo from "./components/AppointmentInfo";
 
 function App() {
   // let [appointmentList, setAppointmentList] = useState([]);
-  let [configList, setConfigList] = useState([]);
+  let [config, setConfig] = useState([]);
 
   // const fetchData = useCallback(() => {
   //   fetch("./ndcx/data.json")
@@ -21,7 +22,17 @@ function App() {
     fetch("./ndcx/ndcx-config.json")
       .then((response) => response.json())
       .then((data) => {
-        setConfigList(data);
+        // remove duplicate messages
+        const distinctValues = Array.from(
+          new Set(data.messages.map((elem) => `${elem.name}`))
+        ).map((distinctVal) => {
+          return {
+            name: data.messages.find((elem) => elem.name === distinctVal).name,
+            data: data.messages.find((elem) => elem.name === distinctVal).data,
+          };
+        });
+        data.messages = distinctValues;
+        setConfig(data);
       });
   }, []);
 
@@ -38,7 +49,17 @@ function App() {
       <AddAppointment />
       <Search />
       <ul className="divide-y divide-gray-200">
-         <ConfigInfo config={configList} />
+        <ConfigInfo config={config} />
+        <MessageInfo
+          config={config}
+          onDeleteMessage={(name) => {
+            config.messages = config.messages.filter(
+              (message) => message.name !== name
+            );
+            debugger;
+            setConfig(config);
+          }}
+        />
       </ul>
     </div>
   );
