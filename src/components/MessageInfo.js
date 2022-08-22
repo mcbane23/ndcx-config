@@ -1,10 +1,10 @@
 import { BiTrash } from "react-icons/bi";
 
-const MessageInfo = ({ config, onDeleteMessage }) => {
-  if (!config || !config.messages) {
+const MessageInfo = ({ messages, onDeleteMessage }) => {
+  if (!messages) {
     return "";
   } else
-    return config.messages.map((message, index) => {
+    return messages.map((message, index) => {
       return (
         <li key={message.name} className="px-3 py-3 flex items-start">
           <button

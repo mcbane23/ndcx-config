@@ -9,14 +9,17 @@ import MessageInfo from "./components/MessageInfo";
 function App() {
   // let [appointmentList, setAppointmentList] = useState([]);
   let [config, setConfig] = useState([]);
+  let [messages, setMessages] = useState([]);
+  let [query, setQuery] = useState([]);
 
-  // const fetchData = useCallback(() => {
-  //   fetch("./ndcx/data.json")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setAppointmentList(data);
-  //     });
-  // }, []);
+  const filteredMessages = messages.filter(
+    (item) => {
+      return (
+        item.name.toLowerCase().includes(query.toString().toLowerCase()) ||
+        item.data.toLowerCase().includes(query.toString().toLowerCase())
+      )
+    }
+  )
 
   const fetchNDCxData = useCallback(() => {
     fetch("./ndcx/ndcx-config.json")
@@ -33,6 +36,7 @@ function App() {
         });
         data.messages = distinctValues;
         setConfig(data);
+        setMessages(distinctValues);
       });
   }, []);
 
@@ -47,17 +51,16 @@ function App() {
         NDCx config
       </h1>
       <AddAppointment />
-      <Search />
+      <Search query={query} onQueryChange={(myQuery) => setQuery(myQuery)} />
       <ul className="divide-y divide-gray-200">
         <ConfigInfo config={config} />
         <MessageInfo
-          config={config}
+          messages={filteredMessages}
           onDeleteMessage={(name) => {
-            config.messages = config.messages.filter(
+            messages = messages.filter(
               (message) => message.name !== name
             );
-            debugger;
-            setConfig(config);
+            setMessages(messages);
           }}
         />
       </ul>
