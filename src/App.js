@@ -10,7 +10,9 @@ function App() {
   // let [appointmentList, setAppointmentList] = useState([]);
   let [config, setConfig] = useState([]);
   let [messages, setMessages] = useState([]);
-  let [query, setQuery] = useState([]);
+  let [query, setQuery] = useState("");
+  let [sortBy, setSortBy] = useState("name");
+  let [orderBy, setOrderBy] = useState("asc");
 
   const filteredMessages = messages.filter(
     (item) => {
@@ -18,6 +20,14 @@ function App() {
         item.name.toLowerCase().includes(query.toString().toLowerCase()) ||
         item.data.toLowerCase().includes(query.toString().toLowerCase())
       )
+    }
+  ).sort(
+    (a, b) => {
+      let order = (orderBy === 'asc') ? 1 : -1;
+      return (
+        a[sortBy].toLowerCase() < b[sortBy].toLowerCase() ? -1 * order : 1 * order
+      )
+
     }
   )
 
@@ -51,7 +61,13 @@ function App() {
         NDCx config
       </h1>
       <AddAppointment />
-      <Search query={query} onQueryChange={(myQuery) => setQuery(myQuery)} />
+      <Search query={query} 
+      onQueryChange={(myQuery) => setQuery(myQuery)} 
+      orderBy = {orderBy}
+      onOrderByChange={(myOrder) => setOrderBy(myOrder)}
+      sortBy = {sortBy}
+      onSortByChange={(mySort) => setSortBy(mySort)}
+      />
       <ul className="divide-y divide-gray-200">
         <ConfigInfo config={config} />
         <MessageInfo
