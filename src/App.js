@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import AddAppointment from "./components/AddAppointment";
 import ConfigInfo from "./components/ConfigInfo";
 import MessageInfo from "./components/MessageInfo";
+import FileUpload from "./components/FileUpload";
 // import AppointmentInfo from "./components/AppointmentInfo";
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
   const filteredMessages = messages.filter(
     (item) => {
       return (
-        item.name.toLowerCase().includes(query.toString().toLowerCase()) ||
-        item.data.toLowerCase().includes(query.toString().toLowerCase())
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.data.toLowerCase().includes(query.toLowerCase())
       )
     }
   ).sort(
@@ -31,28 +32,28 @@ function App() {
     }
   )
 
-  const fetchNDCxData = useCallback(() => {
-    fetch("./ndcx/ndcx-config.json")
-      .then((response) => response.json())
-      .then((data) => {
-        // remove duplicate messages
-        const distinctValues = Array.from(
-          new Set(data.messages.map((elem) => `${elem.name}`))
-        ).map((distinctVal) => {
-          return {
-            name: data.messages.find((elem) => elem.name === distinctVal).name,
-            data: data.messages.find((elem) => elem.name === distinctVal).data,
-          };
-        });
-        data.messages = distinctValues;
-        setConfig(data);
-        setMessages(distinctValues);
-      });
-  }, []);
+  // const fetchNDCxData = useCallback(() => {
+  //   fetch("./ndcx/ndcx-config.json")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       // remove duplicate messages
+  //       const distinctValues = Array.from(
+  //         new Set(data.messages.map((elem) => `${elem.name}`))
+  //       ).map((distinctVal) => {
+  //         return {
+  //           name: data.messages.find((elem) => elem.name === distinctVal).name,
+  //           data: data.messages.find((elem) => elem.name === distinctVal).data,
+  //         };
+  //       });
+  //       data.messages = distinctValues;
+  //       setConfig(data);
+  //       setMessages(distinctValues);
+  //     });
+  // }, []);
 
-  useEffect(() => {
-    fetchNDCxData();
-  }, [fetchNDCxData]);
+  // useEffect(() => {
+  //   fetchNDCxData();
+  // }, [fetchNDCxData]);
 
   return (
     <div className="App container mx-auto mt-3 font-thin">
@@ -61,14 +62,31 @@ function App() {
         NDCx config
       </h1>
       <AddAppointment />
-      <Search query={query} 
-      onQueryChange={(myQuery) => setQuery(myQuery)} 
-      orderBy = {orderBy}
-      onOrderByChange={(myOrder) => setOrderBy(myOrder)}
-      sortBy = {sortBy}
-      onSortByChange={(mySort) => setSortBy(mySort)}
+      <Search query={query}
+        onQueryChange={(myQuery) => setQuery(myQuery)}
+        orderBy={orderBy}
+        onOrderByChange={(myOrder) => setOrderBy(myOrder)}
+        sortBy={sortBy}
+        onSortByChange={(mySort) => setSortBy(mySort)}
       />
       <ul className="divide-y divide-gray-200">
+        <FileUpload onFileChange={
+          (data) => {
+            data = JSON.parse(data)
+            // remove duplicate messages
+            const distinctValues = Array.from(
+              new Set(data.messages.map((elem) => `${elem.name}`))
+            ).map((distinctVal) => {
+              return {
+                name: data.messages.find((elem) => elem.name === distinctVal).name,
+                data: data.messages.find((elem) => elem.name === distinctVal).data,
+              };
+            });
+            data.messages = distinctValues;
+            setConfig(data);
+            setMessages(distinctValues);
+          }
+        } />
         <ConfigInfo config={config} />
         <MessageInfo
           messages={filteredMessages}
@@ -76,6 +94,14 @@ function App() {
             messages = messages.filter(
               (message) => message.name !== name
             );
+            setMessages(messages);
+          }}
+          onMessageChange={(name, value) => {
+            messages = messages.map((elem) => {
+              if (elem.name === name) {
+                return { name: elem.name, data: value };
+              } else return elem;
+            })
             setMessages(messages);
           }}
         />
