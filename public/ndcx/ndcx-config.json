@@ -1,0 +1,722 @@
+{
+	"showFlowContext": false,
+	"useDisplaySize": false,
+	"terminal": {
+		"configId": "0778",
+		"productClass": "1F"
+	},
+	"deviceStatus": {
+		"D": {
+			"name": "Magnetic Card Reader/Writer",
+			"fitness": "0",
+			"capabilities": "OA",
+			"enabled": true,
+			"options": {
+				"10": "Track 1/2 Dip MSR",
+				"11": "Track 1/2 Swipe Reader",
+				"20": "Track 3 Smart with MM",
+				"47": "Contactless Card Reader (Magnetic Stripe Data only)",
+				"48": "Contactless Card Reader (Magnetic Stripe Data and Contactless EMV Transactions)",
+				"00": "No card reader attached",
+				"01": "Track 2 (read only)",
+				"02": "Reserved",
+				"03": "Track 1/2/3 MCRW (write on track 3 only)",
+				"04": "Reserved",
+				"05": "PC Dip Reader",
+				"06": "Reserved",
+				"07": "3 Track Write MCRW",
+				"08": "Track 2 Smart Card Reader",
+				"09": "Track 1/2/3 Smart Card Reader",
+				"0A": "3 Track Write Smart Card Reader",
+				"0B": "Track 1/2 and Track 2/3 Dip MSR",
+				"0C": "Track 1/2/3 CIM86 MCRW",
+				"0D": "Reserved",
+				"0F": "Reserved",
+				"1D": "DASH Reader",
+				"1E": "Track 1/2/3 with MM",
+				"1F": "Track 1/2/3 Smart with MM"
+			}
+		},
+		"E": {
+			"name": "Cash Handler",
+			"fitness": "00000",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"F": {
+			"name": "Envelope Depository",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {
+				"00": "Not configured",
+				"01": "Reserved",
+				"02": "Programmable printing depository",
+				"03": "Reserved",
+				"04": "Reserved"
+			}
+		},
+		"G": {
+			"name": "Receipt Printer",
+			"fitness": "0",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"H": {
+			"name": "Journal Printer",
+			"fitness": "0",
+			"capabilities": "80",
+			"enabled": true,
+			"options": {}
+		},
+		"K": {
+			"name": "Night Safe Depository",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"L": {
+			"name": "Encryptor",
+			"fitness": "0",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"M": {
+			"name": "Security Camera",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"N": {
+			"name": "Door Access System",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"P": {
+			"name": "TI Bins (Alarms)",
+			"fitness": "",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"Q": {
+			"name": "Cardholder Keyboard",
+			"fitness": "0",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"R": {
+			"name": "Operator Keyboard",
+			"fitness": "",
+			"capabilities": "02",
+			"enabled": true,
+			"options": {}
+		},
+		"S": {
+			"name": "Cardholder Display/Voice",
+			"fitness": "",
+			"capabilities": "00",
+			"enabled": true,
+			"options": {}
+		},
+		"V": {
+			"name": "Statement Printer",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"X": {
+			"name": "Passbook",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"Y": {
+			"name": "Coin Dispenser",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"[": {
+			"name": "Media Entry Indicators",
+			"fitness": "",
+			"capabilities": "01",
+			"enabled": true,
+			"options": {}
+		},
+		"\\": {
+			"name": "Envelope Dispenser",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"a": {
+			"name": "Voice Guidance",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"d": {
+			"name": "Cash Handler 0",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"e": {
+			"name": "Cash Handler 1",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"f": {
+			"name": "Barcode Reader",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"j": {
+			"name": "UPS",
+			"fitness": "",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		},
+		"q": {
+			"name": "Cheque Processor",
+			"fitness": "0",
+			"capabilities": "007B",
+			"enabled": true,
+			"options": {}
+		},
+		"w": {
+			"name": "Note Acceptor",
+			"fitness": "000100020",
+			"capabilities": "06",
+			"enabled": true,
+			"options": {}
+		},
+		"y": {
+			"name": "Secondary Card Reader",
+			"fitness": "0",
+			"capabilities": "",
+			"enabled": true,
+			"options": {}
+		}
+	},
+	"notesDispensable": [
+		{
+			"denomination": 5,
+			"count": 20,
+			"currency": "GBP"
+		},
+		{
+			"denomination": 10,
+			"count": 20,
+			"currency": "GBP"
+		},
+		{
+			"denomination": 20,
+			"count": 20,
+			"currency": "GBP"
+		},
+		{
+			"denomination": 50,
+			"count": 20,
+			"currency": "GBP"
+		}
+	],
+	"messages": [
+		{
+			"name": "Good Type 3 No Receipt",
+			"data": "4<fs><fs><fs>200<fs>00010000<fs>5346A060<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Good Type 2 w/Receipt English",
+			"data": "4<fs><fs><fs>200<fs>00000200<fs>1115A061<fs>002<lf>YOU HAVE WITHDRAWN             `10.00<lf>AT SOUTHSEA PALM RD 3  N170831<lf>TRANSACTION REFERENCE : 001115<lf><lf>ACCOUNT 1002<lf><lf>21/10/2020  16:30:42<lf><lf>A0000000031010<fs>5CAM8A023035"
+		},
+		{
+			"name": "Good Type 2 w/Receipt Welsh",
+			"data": "4<fs><fs><fs>200<fs>00000200<fs>1117A061<fs>002<lf>RYDYCH WEDI TYNNU ALLAN        `10.00<lf>YN SOUTHSEA PALM RD 3  N170831<lf>CYFEIRNOD Y TRAFODIAD : 001117<lf><lf>ACCOUNT 1002<lf><lf>21/10/2020  16:32:16<lf><lf>A0000000031010<fs>5CAM8A023035"
+		},
+		{
+			"name": "Good Type 2 w/Receipt Immediate English (ncr)",
+			"data": "4<fs><fs><fs>200<fs>00000200<fs>1115A061<fs>002<lf>YOU HAVE WITHDRAWN             `10.00<lf>AT SOUTHSEA PALM RD 3  N170831<lf>TRANSACTION REFERENCE : 001115<lf><lf>ACCOUNT 1002<lf><lf>21/10/2020  16:30:42<lf><lf>A0000000031010<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Overdraft Warning Question (HCSTC) English",
+			"data": "3<fs><fs><fs>200000111000<fs>037<fs><so>220<cr><fs>5CAM8A023035"
+		},
+		{
+			"name": "Overdraft Warning Question (HCSTC) Welsh",
+			"data": "3<fs><fs><fs>200000111000<fs>037<fs><so>470<cr><fs>5CAM8A023035"
+		},
+		{
+			"name": "Overdraft Declined Reply",
+			"data": "4<fs><fs><fs>096<fs>00000000<fs>02505<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "DCC Question",
+			"data": "3<fs><fs><fs>200000111000<fs>037<fs><so>222<esc>(3<si>C5  5.00<si>C<GBP<si>DM  GBP1 = 1.881<si>D<CAD<si>E5 8.00%<si>F1      9.41<si>F<CAD<esc>(5<si>ID The Tesco Bank exchange rate provided on 01/07/2021 includes a<si>JA mark up of  8.00%. Your card issuer may charge an additional fee for the transaction.<si>KA Make sure you understand the costs of currency conversion as they may be different<si>LA    depending on whether you select your home currency or the transaction currency.<esc>(1<cr><fs>5CAM8A023035"
+		},
+		{
+			"name": "DCC Declined Reply",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>60185100100<so>089                            <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Question English",
+			"data": "3<fs><fs><fs>200000111000<fs>025<fs><so>120<si>E8 `1.00<fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Question Welsh",
+			"data": "3<fs><fs><fs>200000111000<fs>025<fs><so>370<si>E8 `1.00<fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Declined Reply",
+			"data": "4<fs><fs><fs>202<fs>00000000<fs>04835<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Timeout Reply",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>04865100100<so>097                            <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Reader Failure (2nd Txn Reply)",
+			"data": "4<fs><fs><fs>190<fs>00000000<fs>19065<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Exceeds approval amount limit (DO NOT USE YET - QUERY 2)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>15625<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained English v1 with receipt",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>11735100100<so>085<fs>012YOUR CARD HAS BEEN RETAINED<lf><lf>AT SOUTHSEA PALM RD 3  N170831<lf><lf>TRANSACTION REFERENCE : 001173<lf><lf>PLEASE CONTACT YOUR CARD ISSUER<lf><lf><lf><lf><lf> 5942                                 <lf><lf>23OCT20     17:15:06<lf><lf>A0000000291010<gs>1CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:15:06 SEQ NO 1173<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained English v2 with receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03245081081REF 123<gs>    100<so>085<fs>012<lf>06/11/20 12:01  N611231  324 04<lf>CARD 0004              CARD RETAINED<lf>REQUESTED BY ISSUER<lf>PLEASE CONSULT CARD ISSUER<gs>1CARD RETAINED<lf>CARD :222291******0004         <lf>AT 06/11/2020  12:01:54 SEQ NO 0324<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained English v1 without receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>11735100100<so>085<fs>011CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:15:06 SEQ NO 1173<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained English v2 without receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03245081081REF 456<gs>    100<so>085<fs>011CARD RETAINED<lf>CARD :222291******0004         <lf>AT 06/11/2020  12:01:54 SEQ NO 0324<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained Welsh v1 with receipt",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12015100350<so>335<fs>012MAE'CH CERDYN WEDI EI GADW<lf><lf>YN SOUTHSEA PALM RD 3  N170831<lf><lf>CYFEIRNOD Y TRAFODIAD : 001201<lf><lf>HOLWCH Y CWMNI SY'N RHOI'CH CERDYN<lf><lf><lf><lf><lf> 5942                                 <lf><lf>23HYD20     17:36:52<lf><lf>A0000000291010<gs>1CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:36:52 SEQ NO 1201<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained Welsh v2 with receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12005081331CYF 321<gs>    350<so>335<fs>012MAE'CH CERDYN WEDI EI GADW<lf><lf>YN SOUTHSEA PALM RD 3  N170831<lf><lf>CYFEIRNOD Y TRAFODIAD : 001200<lf><lf>HOLWCH Y CWMNI SY'N RHOI'CH CERDYN<lf><lf><lf><lf><lf> 5942                                 <lf><lf>23HYD20     17:35:50<lf><lf>A0000000291010<gs>1CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:35:50 SEQ NO 1200<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained Welsh v1 without receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12015100350<so>335<fs>011CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:36:52 SEQ NO 1201<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Retained Welsh v2 without receipt (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12005081331CYF 654<gs>    350<so>335<fs>011CARD RETAINED<lf>CARD :453979******5942         <lf>AT 23/10/2020  17:35:50 SEQ NO 1200<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_065 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14205081081REF 023<gs>    100<so>065<fs>00227FEB<lf>TRANSACTION REFUSED<lf>PLEASE KEEP THIS SLIP<lf>AND CONSULT YOUR BRANCH        REF023<lf><lf><lf><lf><lf><lf>2312<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_065 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14195081331CYF 023<gs>    350<so>315<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           CYF023<lf><lf><lf><lf><lf><lf>2312<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_067 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>13805081081REF 022<gs>    100<so>067<fs>00227FEB<lf>TRANSACTION REFUSED<lf>PLEASE KEEP THIS SLIP<lf>AND CONSULT YOUR BRANCH        <lf>THERE IS NO ACTIVE PIN FOR THIS CARD<lf><lf><lf><lf><lf>2629<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_067 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>13795081331CYF 022<gs>    350<so>317<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           <lf>DOES DIM PIN AR WAITH I'R CERDYN HWN<lf><lf><lf><lf><lf>2629<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_068 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14865081081   <gs>    100<so>068<fs>002<lf>16/11/20 12:26  N170831  486 54<lf>CARD 1002  TRANSACTION REFUSED<lf>YOUR CARD HAS EXPIRED<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_068 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14875081331   <gs>    350<so>318<fs>002<lf>16/11/20 12:26  N170831  487 54<lf>CERDYN 1002  TRAFODIAD WEDI EI WRTHOD<lf>MAE'CH CERDYN WEDI DOD I BEN<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_069 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03475100100<so>069<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_069 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03505081081 <gs>    100<so>069<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_069 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05585100350<so>319<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_069 Welsh v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05615081331 <gs>    350<so>319<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_071 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03395100100<so>071<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_071 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>06895081081NIL<gs>    100<so>071<fs>002<lf>  07 OCT  BAC               10,608.49+<lf>  07 OCT  EBP               12,062.00-<lf>  17 OCT  INT                  207.15-<lf>  14 NOV  INT                   73.28-<lf>  27 FEB  CDM                   20.00-<lf>  18 MAR  C/L                   20.00-<lf>  DOES NOT INCLUDE PENDING TRANSACTIONS<lf><lf>ACCOUNT 8434<lf>ACCOUNT BALANCE            `140911.01DR <lf><lf>ARRANGED OVERDRAFT REMAINING<lf>                            `59088.99   <lf><lf>  18/03/2020  10:26:39<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_071 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05505100350<so>321<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_071 Welsh v2 (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>06895081331NIL<gs>    350<so>321<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_076 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03445100100<so>076<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_076 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>06085081081NIL<gs>    100<so>076<fs>002  13 OCT  BAC                  328.00+<lf>  13 OCT  DPC                  302.00-<lf>  17 OCT  D/D                   49.17-<lf>  01 NOV  S/O                  137.00-<lf>  29 JUN  C/L                   10.00-<lf>  29 JUN  C/L                  290.00-<lf>  DOES NOT INCLUDE PENDING TRANSACTIONS<lf><lf>ACCOUNT 1697<lf>ACCOUNT BALANCE               -174.50   <lf><lf>  29/06/2020  12:34:04<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_076 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05555100350<so>326<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_076 Welsh v2 (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>06085081331CYF 123<gs>    350<so>326<fs>002  13 OCT  BAC                  328.00+<lf>  13 OCT  DPC                  302.00-<lf>  17 OCT  D/D                   49.17-<lf>  01 NOV  S/O                  137.00-<lf>  29 JUN  C/L                   10.00-<lf>  29 JUN  C/L                  290.00-<lf>  DOES NOT INCLUDE PENDING TRANSACTIONS<lf><lf>ACCOUNT 1697<lf>ACCOUNT BALANCE               -174.50   <lf><lf>  29/06/2020  12:34:04<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_077 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14125100100<so>077<fs>00227FEB<lf>TRANSACTION REFUSED<lf>PLEASE KEEP THIS SLIP<lf>AND CONSULT YOUR BRANCH        REF300<lf><lf><lf><lf><lf><lf>6538<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_077 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14035081081REF 000<gs>    100<so>077<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_077 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14115100350<so>327<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           CYF300<lf><lf><lf><lf><lf><lf>6538<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_077 Welsh v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>13595081331CYF 302<gs>    350<so>327<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           CYF302<lf><lf><lf><lf><lf><lf>6595<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_078 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>15665100100<so>078<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_078 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>11475081081 <gs>    100<so>078<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_078 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>15675100350<so>328<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_078 Welsh v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>11575081331 <gs>    350<so>328<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_079 English v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03435100100<so>079<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_079 English v2",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00875081081REF    <gs>    100<so>079<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_079 Welsh v1",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05545100350<so>329<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_079 Welsh v2 (ncr)",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00875081331CYF    <gs>    350<so>329<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_087 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03305100100<so>087<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_087 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05435100350<so>337<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_099 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>03455100100<so>099<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_099 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>05565100350<so>349<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_164 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00885100100<so>164<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_164 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>13305100350<so>414<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_170 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>02025100100<so>170<fs>002<lf>05/11/20 13:02  N652131  202 54<lf>CARD 0004  TRANSACTION REFUSED<lf>YOUR CARD HAS EXPIRED<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_170 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14065100350<so>420<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           <lf>MAE'R CERDYN WEDI DOD I BEN<lf><lf><lf><lf><lf>1908<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_186 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00875100100<so>186<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_186 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>13315100350<so>436<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_187 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00755100100<so>187<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_187 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>14055100350<so>437<fs>00227CHW<lf>TRAFODIAD WEDI EI WRTHOD<lf>CADWCH Y SLIP HWN<lf>A HOLWCH EICH CANGEN           <lf>MAE'R CERDYN WEDI DOD I BEN<lf><lf><lf><lf><lf>1908<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_233 English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>11985100100<so>233<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "HostResponseInfo_233 Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12275100350<so>483<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `5 `10 & `20   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount Welsh",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073323<si>EC`790<si>EN `5 `10 & `20   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 4 denominations (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `5 `10 `20 & `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 2 denominations (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `10 & `20   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 2 denominations v2 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `5 & `10   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 5 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `5   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 10 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `10   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 20 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `20   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 50 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`790<si>EN `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 50 main amount 90 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`90<si>EN `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 1 denomination - 50 main amount 9990 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`9990<si>EN `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 2 denominations v2 main amount 90 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`90<si>EN `5 & `10   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 4 denominations main amount 9990 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`9990<si>EN `5 `10 `20 & `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 4 denominations main amount 90 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`90<si>EN `5 `10 `20 & `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Invalid Amount English - 4 denominations main amount 9990 (ncr)",
+			"data": "4<fs><fs><fs>225<fs>00000000<fs>26975073073<si>EC`9990<si>EN `5 `10 `20 & `50   <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "RBSIncorrectPINEntryQuestion",
+			"data": "4<fs><fs><fs>216<fs>00000000<fs>03415<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Card Authorisation Successful",
+			"data": "4<fs><fs><fs>448<fs><fs>13545503215278<gs>    658606002<gs>    65944712065<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Cheque Book Order Success (ncr)",
+			"data": "4<fs><fs><fs>211<fs>00000000<fs>02215<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "UBS Bal English £",
+			"data": "4<fs><fs><fs>213<fs>00000000<fs>00885081081  `200<gs>    035       `140,891.01DR<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "UBS Bal English € (ncr)",
+			"data": "4<fs><fs><fs>213<fs>00000000<fs>00885081081  }500<gs>    035       }156,231.01<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "UBS Bal Welsh €",
+			"data": "4<fs><fs><fs>213<fs>00000000<fs>12485081331  }720<gs>    285        }18,290.64<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "UBS Bal Welsh £ (ncr)",
+			"data": "4<fs><fs><fs>213<fs>00000000<fs>12485081331  `420<gs>    285        `19,534.64DR<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal Not Overd No Pend English",
+			"data": " 4<fs><fs><fs>270<fs>00000000<fs>13565201201<so>206<esc>(3<si>D5`1,233.43<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal Not Overd No Pen Welsh",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>12395201451<so>456<esc>(3<si>D5`5,642.86<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal With Pend English",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>13395201201<so>209<esc>(3<si>C7`122.51<esc>(1<esc>(3<si>G8`22.51<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal With Pending Welsh (ncr)",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>13395201451<so>209<esc>(3<si>C7`122.51<esc>(1<esc>(3<si>G8`22.51<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal Pend Overd English",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>13285201201<so>216<esc>(3<si>A3`140,871.01DR<esc>(1<esc>(3<si>D3`140,921.01DR<esc>(1<esc>(3<si>H4`59,078.99<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal Pend Overd Welsh (ncr)",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>13285201451<so>216<esc>(3<si>A3`140,871.01DR<esc>(1<esc>(3<si>D3`140,921.01DR<esc>(1<esc>(3<si>H4`59,078.99<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal With Overd English",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>13265201201<so>217<esc>(3<si>C3`140,871.01DR<esc>(1<esc>(3<si>F4`59,128.99<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Bal With Overd Welsh",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>12265201451<so>467<esc>(3<si>C5`2,379.03<esc>(1<esc>(3<si>F5`5,000.00<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Single Currency Balance English",
+			"data": "4<fs><fs><fs>405<fs>00000000<fs>11105100100<so>261<si>DO GBP         90,120.00  <si>FO GBP         10,220.00  <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Single Currency Balance Welsh",
+			"data": "4<fs><fs><fs>405<fs>00000000<fs>11115100350<so>511<si>DO GBP         90,120.00  <si>FO GBP         10,220.00  <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Multi Curr Bal English",
+			"data": "4<fs><fs><fs>405<fs>00000000<fs>11125100100<so>260<si>CO USD             10.00  <si>GO GBP             40.00  <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Multi Curr Balance Welsh",
+			"data": "4<fs><fs><fs>405<fs>00000000<fs>11135100350<so>510<si>CO USD             10.00  <si>GO GBP             40.00  <fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Link Balance English",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>10805201201<so>202<esc>(1<si>C8`99.99<esc>(1<esc>(1<si>G8`90.00<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Link Balance Welsh",
+			"data": "4<fs><fs><fs>270<fs>00000000<fs>10915201451<so>452<esc>(1<si>C8`99.99<esc>(1<esc>(1<si>G8`90.00<esc>(1<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "TBA",
+			"data": ""
+		},
+		{
+			"name": "Overdraft Warning Question (HCSTC) English",
+			"data": "3<fs><fs><fs>200000111000<fs>037<fs><so>220<cr><fs>5CAM8A023035"
+		},
+		{
+			"name": "Overdraft Warning Question (HCSTC) Welsh",
+			"data": "3<fs><fs><fs>200000111000<fs>037<fs><so>470<cr><fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Question English",
+			"data": "3<fs><fs><fs>200000111000<fs>025<fs><so>120<si>E8 `1.00<fs>5CAM8A023035"
+		},
+		{
+			"name": "Issuer Charge Question Welsh",
+			"data": "3<fs><fs><fs>200000111000<fs>025<fs><so>370<si>E8 `1.00<fs>5CAM8A023035"
+		},
+		{
+			"name": "TBA",
+			"data": ""
+		},
+		{
+			"name": "MiniStatement",
+			"data": "4<fs><fs><fs>214<fs>00000000<fs>15405<fs>002<lf> 11/11  ATM                     10.00+<lf> 11/11  ATM                     10.00+<lf> 11/11  ATM                     10.00+<lf> 11/11  ATM                     10.00+<lf> 11/11  ATM                     10.00+<lf> 11/11  ATM                     10.00+<lf><lf>ACCOUNT 2213<lf>ACCOUNT BALANCE                `99.99  <lf>AVAILABLE BALANCE              `90.00  <lf><lf>  17/11/2020  17:12:58<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "PrintedBalance",
+			"data": "4<fs><fs><fs>214<fs>00000000<fs>10815<fs>002<lf><lf>AT SOUTHSEA PALM RD 3  N170831<lf>TRANSACTION REFERENCE : 001081<lf><lf>ACCOUNT 5942<lf>ACCOUNT BALANCE                `99.99  <lf>AVAILABLE BALANCE              `90.00  <lf><lf>21/10/2020  14:06:33<ff><fs>5CAM8A023035"
+		},
+		{
+			"name": "PinChangeSuccess English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00715100100<so>163<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "PinChangeSuccess Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12815100350<so>413<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Unacceptable PIN English v1",
+			"data": "4<fs><fs><fs>230<fs>00000000<fs>13075100100<so>164<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Unacceptable PIN English v2",
+			"data": "4<fs><fs><fs>230<fs>00000000<fs>02415100100<so>188<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Unacceptable PIN Welsh v1",
+			"data": "4<fs><fs><fs>230<fs>00000000<fs>13085100350<so>414<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Unacceptable PIN Welsh v2",
+			"data": "4<fs><fs><fs>230<fs>00000000<fs>05235100350<so>438<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Good PIN unlock English",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>00725100100<so>183<fs>000<fs>5CAM8A023035"
+		},
+		{
+			"name": "Good PIN unlock Welsh",
+			"data": "4<fs><fs><fs>217<fs>00000000<fs>12825100350<so>433<fs>000<fs>5CAM8A023035"
+		}
+	]
+}

@@ -2,7 +2,6 @@ const FileUpload = ({ onFileChange }) => {
 
     const resetInput = e => {
         if (e) {
-            debugger;
             e.target.value = "";
         }
     }

@@ -15,45 +15,46 @@ function App() {
   let [sortBy, setSortBy] = useState("name");
   let [orderBy, setOrderBy] = useState("asc");
 
-  const filteredMessages = messages.filter(
-    (item) => {
+  const filteredMessages = messages
+    .filter((item) => {
       return (
         item.name.toLowerCase().includes(query.toLowerCase()) ||
         item.data.toLowerCase().includes(query.toLowerCase())
-      )
-    }
-  ).sort(
-    (a, b) => {
-      let order = (orderBy === 'asc') ? 1 : -1;
-      return (
-        a[sortBy].toLowerCase() < b[sortBy].toLowerCase() ? -1 * order : 1 * order
-      )
-
-    }
-  )
+      );
+    })
+    .sort((a, b) => {
+      let order = orderBy === "asc" ? 1 : -1;
+      return a[sortBy].toLowerCase() < b[sortBy].toLowerCase()
+        ? -1 * order
+        : 1 * order;
+    });
 
   // const fetchNDCxData = useCallback(() => {
   //   fetch("./ndcx/ndcx-config.json")
   //     .then((response) => response.json())
   //     .then((data) => {
-  //       // remove duplicate messages
-  //       const distinctValues = Array.from(
-  //         new Set(data.messages.map((elem) => `${elem.name}`))
-  //       ).map((distinctVal) => {
-  //         return {
-  //           name: data.messages.find((elem) => elem.name === distinctVal).name,
-  //           data: data.messages.find((elem) => elem.name === distinctVal).data,
-  //         };
-  //       });
-  //       data.messages = distinctValues;
-  //       setConfig(data);
-  //       setMessages(distinctValues);
+  //       prepareData(data)
   //     });
   // }, []);
 
   // useEffect(() => {
   //   fetchNDCxData();
   // }, [fetchNDCxData]);
+
+  const prepareData = (data) => {
+    // remove duplicate messages
+    const distinctValues = Array.from(
+      new Set(data.messages.map((elem) => `${elem.name}`))
+    ).map((distinctVal) => {
+      return {
+        name: data.messages.find((elem) => elem.name === distinctVal).name,
+        data: data.messages.find((elem) => elem.name === distinctVal).data,
+      };
+    });
+    data.messages = distinctValues;
+    setConfig(data);
+    setMessages(distinctValues);
+  };
 
   return (
     <div className="App container mx-auto mt-3 font-thin">
@@ -62,7 +63,8 @@ function App() {
         NDCx config
       </h1>
       <AddAppointment />
-      <Search query={query}
+      <Search
+        query={query}
         onQueryChange={(myQuery) => setQuery(myQuery)}
         orderBy={orderBy}
         onOrderByChange={(myOrder) => setOrderBy(myOrder)}
@@ -70,30 +72,17 @@ function App() {
         onSortByChange={(mySort) => setSortBy(mySort)}
       />
       <ul className="divide-y divide-gray-200">
-        <FileUpload onFileChange={
-          (data) => {
-            data = JSON.parse(data)
-            // remove duplicate messages
-            const distinctValues = Array.from(
-              new Set(data.messages.map((elem) => `${elem.name}`))
-            ).map((distinctVal) => {
-              return {
-                name: data.messages.find((elem) => elem.name === distinctVal).name,
-                data: data.messages.find((elem) => elem.name === distinctVal).data,
-              };
-            });
-            data.messages = distinctValues;
-            setConfig(data);
-            setMessages(distinctValues);
-          }
-        } />
+        <FileUpload
+          onFileChange={(data) => {
+            data = JSON.parse(data);
+            prepareData(data);
+          }}
+        />
         <ConfigInfo config={config} />
         <MessageInfo
           messages={filteredMessages}
           onDeleteMessage={(name) => {
-            messages = messages.filter(
-              (message) => message.name !== name
-            );
+            messages = messages.filter((message) => message.name !== name);
             setMessages(messages);
           }}
           onMessageChange={(name, value) => {
@@ -101,7 +90,7 @@ function App() {
               if (elem.name === name) {
                 return { name: elem.name, data: value };
               } else return elem;
-            })
+            });
             setMessages(messages);
           }}
         />

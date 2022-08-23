@@ -22,7 +22,7 @@ const MessageInfo = ({ messages, onDeleteMessage, onMessageChange }) => {
             </div>
             <div>
               <b className="text-blue-500">Data: </b> 
-              <input type="text" name="data" id="data" defaultValue={message.data}
+              <textarea rows="2" type="text" name="data" id="data" defaultValue={message.data}
               onChange={(event) => { onMessageChange(message.name, event.target.value) }}
               className="pl-2 rounded-md focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300"/>
             </div>
